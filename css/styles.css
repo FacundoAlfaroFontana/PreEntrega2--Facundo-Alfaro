@@ -1,0 +1,378 @@
+/* Estilos específicos para el contenedor con imagen de fondo y buscador (index.html) */
+#background-container {
+    background-color: #015bbb !important;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin-top: 50px;
+    min-height: 200px; /* Altura mínima */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; 
+    text-align: center;
+} 
+
+/* Estilos específicos para el contenedor con tabla de detalles de envío (seguienvio.html) */
+#table-container {
+    width: 100%;
+}
+
+/* Estilos específicos para el contenedor con acordeón de preguntas frecuentes (seguienvio.html) */
+#accordion-container {
+    width: 100%;
+}
+
+/* Estilos de la barra de navegación (index.html, sucursales.html, sobrenosotros.html, empresas.html, seguirenvio.html) */
+.navbar-nav .nav-link {
+    text-align: center; 
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #ffffff; /* Cambia el color de fondo al pasar el mouse */
+    color: #007bff; /* Cambia el color del texto al pasar el mouse */
+    font-weight: bold; /* Hace más gruesa la letra al pasar el mouse */
+}
+
+/* Estilos de la sección "services" (sobrenosotros.html) */
+.services h2 {
+    color: #000000; /* Cambia el color del título */
+}
+
+.services p {
+    color: #000000; /* Cambia el color del texto */
+}
+
+.services .card {
+    margin-bottom: 20px; /* Espacio en blanco de 20px entre cada tarjeta */
+}
+
+/* Estilos de la sección "about" (sobrenosotros.html) */
+.about-text {
+    color: rgb(0, 0, 0) !important; /* Color del texto del área de texto "about" */
+}
+
+#imagcontacto {
+    margin-top: 60px; /* Margen superior de la imagen de contacto */
+}
+
+/* Estilos de la sección "seccionservicios" (sobrenosotros.html) */
+#seccionservicios {
+    margin-top: 40px; /* Margen superior de la sección "seccionservicios" */
+}
+
+#parrafoss {
+    color: #ffffff; /* Cambia el color del texto */
+}
+
+/* Estilos del footer (index.html, sucursales.html, sobrenosotros.html, empresas.html, seguirenvio.html) */
+.footer {
+    margin-top: 20px; /* Margen superior del footer */
+}
+
+/* Estilos CSS personalizados para el mapa (sobrenosotros.html) */
+#mapa {
+    height: 500px; 
+}
+
+/* Estilos para los textos del carrusel en desktop (index.html) */
+@media (min-width: 992px) {
+    .carousel-item img {
+        height: 600px; 
+        width: auto; /* Ancho automático para mantener la proporción */
+        object-fit: cover; /* Ajustar la imagen para que cubra el contenedor sin distorsionar */
+        object-position: center;
+    }
+
+    .carousel-item:nth-child(2) img {
+        object-position: bottom;
+    }
+
+    .carousel-caption h5,
+    .carousel-caption p {
+        color: white; /* Color del texto */
+        text-align: center; /* Alineación del texto */
+        font-size: 24px; /* Tamaño de fuente */
+        font-weight: bold; 
+    }
+
+    .carousel-caption p {
+        font-size: 18px; /* Tamaño de fuente para el párrafo */
+    }
+
+    .carousel-caption a.btn {
+        margin-top: 10px; /* Margen superior para separar el botón del texto */
+    }
+}
+
+/* Estilos para los textos del carrusel en dispositivos móviles (index.html) */
+@media (max-width: 991px) {
+    .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con transparencia */
+        border-radius: 10px; /* Bordes redondeados */
+        padding: 10px; /* Espaciado interno */
+        text-align: center; /* Alineación centrada */
+    }
+
+    .carousel-caption h5,
+    .carousel-caption p,
+    .carousel-caption a.btn {
+        color: white; /* Color del texto */
+    }
+}
+
+/* Estilos únicos para la sección de portafolio (index.html) */
+#portfolio h2,#portfolio p {
+    color: rgb(27, 27, 27); /* Cambia el color del texto del h2 */
+}
+
+#formulario_contactos{
+    background-color: rgba(0, 0, 0, 0.678);
+    color: white;
+}
+
+/* Estilo para la sección de información (index.html) */
+.info-section {
+    background-color: #ffffff; /* Color de fondo */
+    padding: 40px 0; /* Espaciado interno */
+    text-align: center;
+}
+
+/* Estilo para el formulario de inicio de sesión (empresas.html) */
+#login-card {
+    background-color: rgba(8, 8, 8, 0.726); /* Color de fondo */
+    color: white;
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin-top: 10px;
+}
+
+#login-title {
+    text-align: center;
+}
+
+#login-form input[type="text"],
+#login-form input[type="password"] {
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+#login-form button {
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #141414;
+}
+
+/* estilos para el video y contenedor de video (empresas.html) */
+
+
+#container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -30px;
+}
+
+#video-container {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+#video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Estilos generales para todos los tamaños de pantalla (sobrenosotros.html) */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.index {
+    flex-basis: 20%;
+    padding-right: 20px;
+    margin-top: 100px;
+}
+
+.content {
+    flex-basis: 75%;
+}
+
+.container-box {
+    background-color: #141414;
+    color: #ffffffc7 ;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* separaciones entre cards (sobrenosotros.html) */
+#art2,
+#art3{
+    margin-top: 10px;
+}
+
+/* Estilos específicos para pantallas pequeñas (móviles) (sobrenosotros.html) */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px; /* Reduce el espacio de relleno en dispositivos móviles */
+    }
+
+    .index, .content {
+        flex-basis: 100%;
+        padding-right: 0;
+        text-align: center; /* Alinea el texto al centro */
+    }
+
+    .container-box {
+        width: 100vw; /* Ancho del 100% de la ventana */
+        margin-right: 0; /* Elimina el margen derecho en dispositivos móviles */
+        margin-bottom: 10px; /* Reduce el margen inferior en dispositivos móviles */
+        background-color: #141414;
+        color: #ffffffc7;
+    }
+}
+
+#contnosotros{
+    margin-top: 60px;
+}
+
+#login-container {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #015bbb;
+    text-align: center;
+}
+
+@media screen and (max-width: 320px) {
+    #carouselE {
+        margin-top: 70px;
+    }
+    .carousel-caption h5,
+    .carousel-caption p {
+        font-size: 14px; /* Tamaño de fuente más pequeño */
+    }
+    .carousel-caption .btn {
+        padding: 5px 10px;
+        font-size: 12px; /* Tamaño de fuente más pequeño para el botón */
+    }
+}
+
+.video-area {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%; /* Proporción de aspecto de 16:9 (para un video de aspecto 16:9) */
+}
+
+.video-area video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.index-grid {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Columnas que se ajustan automáticamente */
+    gap: 10px; /* Espacio entre las columnas */
+    padding: 20px; /* Espacio interior del header */
+    background-color: #f0f0f0; /* Color de fondo */
+}
+
+#tituloindice {
+    text-align: center;
+    margin-top: 60px;
+}
+
+/* Estilos para los elementos del índice (index.html) */
+.index-grid a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #015bbb;
+}
+
+.index-grid a:hover {
+    background-color: #ffffff;
+    color: #015bbb;
+}
+
+/* Media query para ajustar el índice en dispositivos móviles (index.html) */
+@media only screen and (max-width: 768px) {
+    .index-grid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Cambiar el tamaño de las columnas en dispositivos más pequeños */
+        padding: 10px; /* Reducir el espacio interior del header en dispositivos móviles */
+    }
+
+    /* Reducir el tamaño de la fuente en dispositivos móviles */
+    .index-grid a {
+        font-size: 12px;
+    }
+}
+
+/* Estilos para el encabezado (sucursales.html, sobrenosotros.html, empresas.html) */
+.tituloo{
+    margin-top: 70px;
+    text-align: center;
+}
+
+/* Estilos para los elementos del acordeón (seguienvio.html) */
+.accordion-button {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+}
+
+/* Estilos para el cuerpo del acordeón (seguienvio.html) */
+.accordion-body {
+    background-color: #f8f9fa; /* Color de fondo */
+    color: #333; /* Color del texto */
+}
+
+/* Estilos para la tabla (seguirenvio.html) */
+#tablaProcesoEnvio {
+    background-color: #f2f2f2; /* Color de fondo */
+}
+/* estilos para textos del contenedor de tabla (seguirenvio.html) */
+#table-container h2,
+#table-container h5,
+#table-container table {
+    color: #fff; 
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+/* estilos para texto del contenedor preguntas frecuentes (seguirenvio.html) */
+#accordion-container h3 {
+    color: white; 
+    text-align: center;
+}
+
+/* estilos para el formulario de cotizarenvios.html */
+#formularioenvio{
+    margin-top: 50px;
+}

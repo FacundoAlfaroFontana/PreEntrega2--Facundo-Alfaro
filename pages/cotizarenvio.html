@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizar Envio - Transporte Alfaro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div>
+            <a href="../index.html" class="navbar-brand">
+                <span class="text-primary">&nbsp;Transporte</span> Alfaro
+            </a>
+        </div>
+        <!-- Botón del menú -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
+            aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Contenido de la barra de navegación -->
+        <div class="collapse navbar-collapse" id="navbarS">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link"><i class="bi bi-house-door"></i> Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./sucursales.html" class="nav-link"><i class="bi bi-geo-alt"></i> Sucursales</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./sobrenosotros.html" class="nav-link"><i class="bi bi-person"></i> Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./empresas.html" class="nav-link"><i class="bi bi-building"></i> Empresas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./cotizarenvio.html" class="nav-link"><i class="bi bi-calculator"></i> Cotizar Envío</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./seguirenvio.html" class="nav-link"><i class="bi bi-truck"></i> Seguir Envío</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- FIN DE LA BARRA DE NAVEGACIÓN -->
+    <div id="formularioenvio" class="container">
+        <h2>Formulario de Envío</h2>
+        <form>
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <label for="origen">Origen</label>
+                    <select class="form-control" id="origen">
+                        <!-- Opciones de origen (provincias de Argentina) -->
+                        <option value="Buenos Aires">Buenos Aires</option>
+                        <option value="Catamarca">Catamarca</option>
+                        <option value="Chaco">Chaco</option>
+                        <option value="Chubut">Chubut</option>
+                        <option value="Córdoba">Córdoba</option>
+                        <option value="Corrientes">Corrientes</option>
+                        <option value="Entre Ríos">Entre Ríos</option>
+                        <option value="Formosa">Formosa</option>
+                        <option value="Jujuy">Jujuy</option>
+                        <option value="La Pampa">La Pampa</option>
+                        <option value="La Rioja">La Rioja</option>
+                        <option value="Mendoza">Mendoza</option>
+                        <option value="Misiones">Misiones</option>
+                        <option value="Neuquén">Neuquén</option>
+                        <option value="Río Negro">Río Negro</option>
+                        <option value="Salta">Salta</option>
+                        <option value="San Juan">San Juan</option>
+                        <option value="San Luis">San Luis</option>
+                        <option value="Santa Cruz">Santa Cruz</option>
+                        <option value="Santa Fe">Santa Fe</option>
+                        <option value="Santiago del Estero">Santiago del Estero</option>
+                        <option value="Tierra del Fuego">Tierra del Fuego</option>
+                        <option value="Tucumán">Tucumán</option>
+                    </select>
+                </div>
+                <div class="col-md-6 form-group">
+                    <label for="destino">Destino</label>
+                    <select class="form-control" id="destino">
+                        <!-- Opciones de destino (provincias de Argentina) -->
+                        <option value="Buenos Aires">Buenos Aires</option>
+                        <option value="Catamarca">Catamarca</option>
+                        <option value="Chaco">Chaco</option>
+                        <option value="Chubut">Chubut</option>
+                        <option value="Córdoba">Córdoba</option>
+                        <option value="Corrientes">Corrientes</option>
+                        <option value="Entre Ríos">Entre Ríos</option>
+                        <option value="Formosa">Formosa</option>
+                        <option value="Jujuy">Jujuy</option>
+                        <option value="La Pampa">La Pampa</option>
+                        <option value="La Rioja">La Rioja</option>
+                        <option value="Mendoza">Mendoza</option>
+                        <option value="Misiones">Misiones</option>
+                        <option value="Neuquén">Neuquén</option>
+                        <option value="Río Negro">Río Negro</option>
+                        <option value="Salta">Salta</option>
+                        <option value="San Juan">San Juan</option>
+                        <option value="San Luis">San Luis</option>
+                        <option value="Santa Cruz">Santa Cruz</option>
+                        <option value="Santa Fe">Santa Fe</option>
+                        <option value="Santiago del Estero">Santiago del Estero</option>
+                        <option value="Tierra del Fuego">Tierra del Fuego</option>
+                        <option value="Tucumán">Tucumán</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 form-group">
+                    <label for="alto">Alto del Paquete (cm)</label>
+                    <input type="text" class="form-control" id="alto" placeholder="Introduce el alto del paquete">
+                </div>
+                <div class="col-md-4 form-group">
+                    <label for="ancho">Ancho del Paquete (cm)</label>
+                    <input type="text" class="form-control" id="ancho" placeholder="Introduce el ancho del paquete">
+                </div>
+                <div class="col-md-4 form-group">
+                    <label for="largo">Largo del Paquete (cm)</label>
+                    <input type="text" class="form-control" id="largo" placeholder="Introduce el largo del paquete">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="valorMercancia">Valor de la Mercancía</label>
+                <input type="text" class="form-control" id="valorMercancia"
+                    placeholder="Introduce el valor de la mercancía">
+            </div>
+            <div class="form-group">
+                <label for="entrega">Entrega</label>
+                <select class="form-control" id="entrega">
+                    <option>Entrega a domicilio</option>
+                    <option>Recoger en agencia</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Cotizar</button>
+            <button type="reset" class="btn btn-secondary">Limpiar</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <h1 class="text-center">Tip para cotizar tu Envio</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.9Y7_BQlpsjeOSF11U7TUdQAAAA?w=272&h=185&c=7&r=0&o=5&pid=1.7"
+                        class="card-img-top" alt="Imagen">
+                    <div class="card-body">
+                        <p class="card-text">"En esta imagen, se muestra un paquete junto a sus dimensiones para
+                            facilitar la comprensión de su tamaño. Las dimensiones incluyen la longitud, la anchura y la
+                            altura del paquete, lo que proporciona una referencia clara para su manejo y transporte.
+                            Esta información es crucial para asegurar que el paquete pueda ser almacenado, manipulado y
+                            entregado de manera eficiente y segura. Además, estas dimensiones son esenciales para el
+                            cálculo preciso del costo de envío y la planificación logística</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline mb-0">
+                        <!-- Iconos de redes sociales -->
+                        <li class="list-inline-item">
+                            <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="social-icon"><i class="bi bi-whatsapp"></i></a>
+                            <!-- Reemplazar bi bi-linkedin con bi bi-whatsapp -->
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="social-icon"><i class="bi bi-telegram"></i></a>
+                        </li>
+                    </ul>
+                    <p class="mt-3">© 2024 Facundo Alfaro. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Fin Footer -->
+
+    <!-- script de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
