@@ -124,6 +124,18 @@
     color: rgb(27, 27, 27); /* Cambia el color del texto del h2 */
 }
 
+.portfolio .row .col-12 {
+    margin-top: 20px; /* Puedes ajustar el valor según tu preferencia */
+}
+
+/* boton twiterr (index.html) */
+.btn-black {
+    border-color: white;
+}
+.btn-black:hover {
+    border-color: white;
+}
+
 #formulario_contactos{
     background-color: rgba(0, 0, 0, 0.678);
     color: white;
@@ -225,6 +237,12 @@
 #art3{
     margin-top: 10px;
 }
+
+/* espacios entre noticias (sobrenosotros.html) */
+.novedad {
+    margin-bottom: 50px;
+}
+
 
 /* Estilos específicos para pantallas pequeñas (móviles) (sobrenosotros.html) */
 @media screen and (max-width: 768px) {
